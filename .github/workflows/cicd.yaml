@@ -1,0 +1,30 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@v3
+
+    # 🔍 FOSSA Scan
+    - name: FOSSA Scan
+      uses: fossas/fossa-action@v1
+      with:
+        api-key: ${{ secrets.FOSSA_API_KEY }}
+
+    # 🔐 Snyk Scan
+    - name: Snyk Open Source Vulnerability Scan
+      uses: snyk/actions/node@v1
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      with:
+        args: test --all-projects
+
+   
