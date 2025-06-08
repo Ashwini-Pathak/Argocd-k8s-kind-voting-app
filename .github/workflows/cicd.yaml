@@ -22,9 +22,7 @@ jobs:
     # 🔐 Snyk Scan
     - name: Snyk Open Source Vulnerability Scan
       uses: snyk/actions@master
-      env:
-        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       with:
         args: test --all-projects
-
-   
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
