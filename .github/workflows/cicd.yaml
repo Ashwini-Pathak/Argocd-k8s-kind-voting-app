@@ -20,9 +20,10 @@ jobs:
         api-key: ${{ secrets.FOSSA_API_KEY }}
 
     # 🔐 Snyk Scan
-    - name: Snyk Open Source Vulnerability Scan
+    - name: Snyk Scan
       uses: snyk/actions@master
       with:
-        args: test --all-projects
-      env:
-        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        args: test --org=Ashwini-Pathak --all-projects
+    env:
+    SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+
