@@ -24,6 +24,5 @@ jobs:
       uses: snyk/actions@master
       with:
         args: test --org=Ashwini-Pathak --all-projects
-    env:
-    SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
