@@ -23,6 +23,6 @@ jobs:
     - name: Snyk Scan
       uses: snyk/actions@master
       with:
-        args: test --org=Ashwini-Pathak --all-projects
+        args: test --org=ashwini-Pathak --all-projects
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
