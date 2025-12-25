@@ -17,6 +17,7 @@ This guide covers the steps to:
 ## Architecture
 
 ![Architecture diagram](k8s-kind-voting-app.png)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAshwini-Pathak%2FArgocd-k8s-kind-voting-app.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FAshwini-Pathak%2FArgocd-k8s-kind-voting-app?ref=badge_shield)
 
 ## Observability
 
@@ -58,3 +59,7 @@ This project description emphasizes your role in leveraging AWS EC2, Kubernetes,
 ### Aapke DevOps Wale Bhaiya
 ### [TrainWithShubham](https://www.trainwithshubham.com/)
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAshwini-Pathak%2FArgocd-k8s-kind-voting-app.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FAshwini-Pathak%2FArgocd-k8s-kind-voting-app?ref=badge_large)
